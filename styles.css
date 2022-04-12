@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#m-zone {
+    height: 50vh;
+    width: 100vw;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#p-zone {
+    height: 50vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#m-hand {
+    height: 12.5vh;
+    width: 25vw;
+    background-color: red;
+}
+
+#p-hand {
+    height: 25vh;
+    width: 75vw;
+    background-color: blue;
+}
+
+.card {
+    height: 100%;
+    width: 25%;
+    background-color: greenyellow;
+}
