@@ -1,0 +1,15 @@
+{
+    "monsterDeck": 
+    [
+        {
+            "cardName": "Attack",
+            "cardDescription": "Attack player for 5 health",
+            "cardEffect": "pHealth = pHealth - mAttack"
+        },
+        {
+            "cardName": "Block",
+            "cardDescription": "Block player for 3 attack",
+            "cardEffect": "mBlock = mBlock + 3"
+        }
+    ]
+}

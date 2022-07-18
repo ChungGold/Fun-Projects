@@ -4,12 +4,12 @@
         {
             "cardName": "Attack",
             "cardDescription": "Attack monster for 8 health",
-            "cardEffect": "attack 8"
+            "cardEffect": "mHealth = mHealth - pAttack"
         },
         {
             "cardName": "Block",
-            "cardDescription": "Block monster for 5 attack",
-            "cardEffect": "block 5"
+            "cardDescription": "Block monster for 4 attack",
+            "cardEffect": "pBlock = pBlock + 4"
         }
     ]
 }
