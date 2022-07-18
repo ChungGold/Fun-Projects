@@ -1,0 +1,15 @@
+{
+    "playerDeck": 
+    [
+        {
+            "cardName": "Attack",
+            "cardDescription": "Attack monster for 8 health",
+            "cardEffect": "attack 8"
+        },
+        {
+            "cardName": "Block",
+            "cardDescription": "Block monster for 5 attack",
+            "cardEffect": "block 5"
+        }
+    ]
+}

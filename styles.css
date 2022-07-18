@@ -37,16 +37,28 @@ body {
     height: 12.5vh;
     width: 25vw;
     background-color: red;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #p-hand {
     height: 25vh;
     width: 75vw;
     background-color: blue;
+    display: flex;
+    flex-direction: row;
 }
 
-.card {
+.m-card {
     height: 100%;
     width: 25%;
     background-color: greenyellow;
+    border: solid purple;
+}
+
+.p-card {
+    height: 100%;
+    width: 25%;
+    background-color: greenyellow;
+    border: solid purple;
 }
