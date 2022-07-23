@@ -28,9 +28,38 @@ body {
     width: 100vw;
     background-color: aquamarine;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.healthBars {
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    border: black 1px solid;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+#m-hp {
+    height: 5vh;
+    width: 100vw;
+    background-color: red;
+    text-align: center;
+    line-height: 5vh;
+    color: white;
+    font-size: larger;
+}
+
+#p-hp {
+    height: 5vh;
+    width: 100vw;
+    background-color: green;
+    text-align: center;
+    line-height: 5vh;
+    color: white;
+    font-size: larger;
 }
 
 #m-hand {
@@ -49,12 +78,12 @@ body {
     flex-direction: row;
 }
 
-.m-card {
+/* .m-card {
     height: 100%;
     width: 25%;
     background-color: greenyellow;
     border: solid purple;
-}
+} */
 
 .p-card {
     height: 100%;

@@ -1,13 +1,18 @@
 import playerCards from './playerCards.json' assert {type: 'json'};
 import monsterCards from './monsterCards.json' assert {type: 'json'};
 const pCard = document.getElementsByClassName('p-card');
+const pHealthBar = document.getElementById('p-hp');
+const mHealthBar = document.getElementById('m-hp');
 let mHealth = 100;
 let pHealth = 100;
 let pBlock = 0;
 let mBlock = 0;
 
-
 // eval(monsterCards.monsterDeck[Math.floor(Math.random()*monsterCards.monsterDeck.length)].cardEffect);
+
+//Health bars
+pHealthBar.innerHTML = `${pHealth}/100`
+mHealthBar.innerHTML = `${mHealth}/100`
 
 let mTurn = () => {
     //monster dead
@@ -33,8 +38,9 @@ let mTurn = () => {
         console.log('player blocks 4 damage');
     }
 
-    //test
-    console.log('player hp ' + pHealth);
+    //player hp
+    pHealthBar.innerHTML = `${pHealth}/100`;
+    pHealthBar.style.width = `${pHealth}vw`;
 
     //player slain message
     if (pHealth <= 0) {
@@ -63,8 +69,9 @@ pCard[0].addEventListener("click", function() {
         mBlock = 0;
     }
 
-    //health test
-    console.log('monster hp ' + mHealth);
+    //monster hp
+    mHealthBar.innerHTML = `${mHealth}/100`;
+    mHealthBar.style.width = `${mHealth}vw`;
 
     //monster slain message
     if (mHealth <= 0) {
